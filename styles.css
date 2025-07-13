@@ -1,0 +1,252 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f8fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+  color: #FF0A45;
+}
+
+.wordmark {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #1D1D1D;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.wordmark:hover {
+    transform: scale(1.1);
+    color: #FF0A45;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.sidebar ul li a:hover {
+    color: #FF0A45;
+    transform: scale(1.05);
+}
+
+.sidebar .zing-button {
+    background-color: #FF0A45;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #FF0A45, #FF4B2B);
+    box-shadow: 0 4px 10px rgba(255, 10, 45, 0.4);
+    transition: all 0.3s ease;
+}
+
+.sidebar .zing-button:hover {
+    background-color: #FF0000;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 10, 45, 0.6);
+}
+.sidebar .zing-button:active {
+  transform: scale(0.95);
+}
+
+.feed {
+    flex: 1;
+    max-width: 600px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: white;
+}
+
+.top-bar {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.zing-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.zing-box .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#zing-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+#zing-button {
+    background-color: #FF0A45;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 10px;
+}
+
+#zing-button:hover {
+    background-color: #FF0000;
+    box-shadow: 0 6px 15px rgba(255, 75, 43, 0.6);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+#zing-button:active {
+    background-color: #333333;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.post {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.post:hover {
+    background-color: #fffaf1;
+}
+
+.post .user {
+    display: flex;
+    align-items: center;
+}
+
+.post .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.post-actions span {
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.post-actions span:hover {
+    color: #FF0A45;
+    transform: scale(1.1);
+}
+
+.right-sidebar {
+    width: 250px;
+    padding: 20px;
+}
+
+.trends, .who-to-follow {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.trends ul, .who-to-follow ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trends ul li a,
+.who-to-follow ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.trends ul li a:hover,
+.who-to-follow ul li a:hover {
+    color: #FF0A45;
+}
+
+.verified-badge {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+}
+.verified-badge .badge-bg {
+    position: absolute;
+    color: #FF0A45;
+    font-size: 18px;
+    z-index: 0;
+    left: 0px;
+    top: 3px;
+}
+.verified-badge .badge-middle {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    left: 3px;
+    top: 3.5px;
+    z-index: 1;
+}
+.verified-badge .badge-check {
+    position: absolute;
+    color: #FF0A45;
+    font-size: 15px;
+    left: 1.5px;
+    top: 4px;
+    z-index: 3;
+}
+
+h1, h2, h3, .tweet-button, .top-bar h2, .name, .verified-badge {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
